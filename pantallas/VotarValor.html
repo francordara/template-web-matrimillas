@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Votar valor · Matrimillas</title>
+
+<style>
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#1E293B;background:#fff;font-size:14px;line-height:1.5}
+a{color:#4F46E5;text-decoration:none} a:hover{text-decoration:underline}
+.nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding:12px 32px;border-bottom:1px solid #E2E8F0}
+.brand{font-weight:700;font-size:16px}
+.links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px}
+.links a.on{color:#1E293B;font-weight:600}
+.count{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;background:#B45309;color:#fff;font-size:11px;line-height:18px;text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border-radius:8px;border:1px solid #E2E8F0;background:#F3F4F6;color:#111827;font:600 14px system-ui,sans-serif;cursor:pointer}
+.btn:hover{text-decoration:none;background:#E5E7EB}
+.btn.primary{background:#4F46E5;border-color:#4F46E5;color:#fff}
+.wrap{box-sizing:border-box;max-width:1100px;margin:0 auto;padding:32px}
+h1{margin:0 0 24px;font-size:36px;line-height:1.15;font-weight:700}
+h2{margin:0 0 12px;font-size:18px;font-weight:700}
+label{display:block;font-weight:600;margin-bottom:6px}
+input:not([type=radio]):not([type=checkbox]),select,textarea{box-sizing:border-box;width:100%;min-height:44px;padding:8px 12px;border:1px solid #94A3B8;border-radius:6px;font:inherit;color:#1E293B;background:#fff}
+.field{display:flex;flex-direction:column;margin-bottom:20px}
+.opt{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:400;margin:0}
+.opt input{width:18px;height:18px;margin:0}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#475569;padding:8px 12px;border-bottom:2px solid #CBD5E1}
+td{padding:12px;border-bottom:1px solid #E2E8F0}
+.panel{border:1px solid #E2E8F0;border-radius:10px;padding:20px;background:#fff}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:24px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:16px}
+.muted{color:#475569}
+.big{font-size:32px;font-weight:700;line-height:1.2}
+.pos{color:#15803D;font-weight:600}.neg{color:#B91C1C;font-weight:600}
+.badge{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:600}
+.b-pend{background:#FEF3C7;color:#92400E}.b-ok{background:#DCFCE7;color:#166534}.b-no{background:#FEE2E2;color:#991B1B}.b-exp{background:#E2E8F0;color:#334155}
+</style>
+
+<style>.volver{position:fixed;right:12px;bottom:12px;background:#1E293B;color:#fff!important;padding:8px 14px;border-radius:999px;font:600 13px system-ui;text-decoration:none;opacity:.85;z-index:9}</style></head><body>
+
+
+<div style="min-height: 800px">
+<header class="nav">
+<span class="brand">Matrimillas</span>
+<nav class="links">
+<a href="MenuPrincipal.html">Inicio</a>
+<a href="MisGrupos.html">Grupos</a>
+<a class="on" href="Catalogo.html">Catálogo</a>
+<a href="RegistrarAccion.html">Registrar</a>
+<a href="Aprobaciones.html">Aprobaciones <span class="count">2</span></a>
+<a href="Billetera.html">Billetera</a>
+<a class="btn" href="Login.html">Cerrar sesión</a>
+</nav>
+</header>
+<main class="wrap">
+<h1>Votar el valor de las acciones</h1>
+<div class="panel" style="margin-bottom: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px">
+<div><b>Votación de las 20:00 a las 21:00</b><br><span class="muted">Cierra en 24 min. En los últimos 5 minutos los votos ya no se pueden cambiar.</span></div>
+<span class="badge b-pend">Abierta</span>
+</div>
+<table>
+<thead><tr><th>Acción</th><th>Valor actual</th><th>Tu voto</th><th>Promedio parcial</th></tr></thead>
+<tbody>
+<tr><td>Lavar los platos</td><td class="pos">+5</td><td style="width:140px"><input type="number" value="6" aria-label="Voto para Lavar los platos"></td><td>+5,4</td></tr>
+<tr><td>Cortar el pasto</td><td class="pos">+5</td><td style="width:140px"><input type="number" value="5" aria-label="Voto para Cortar el pasto"></td><td>+5,0</td></tr>
+<tr><td>Hacer las compras</td><td class="pos">+8</td><td style="width:140px"><input type="number" value="10" aria-label="Voto para Hacer las compras"></td><td>+8,7</td></tr>
+<tr><td>Salir a comer</td><td class="neg">-10</td><td style="width:140px"><input type="number" value="-10" aria-label="Voto para Salir a comer"></td><td>-9,5</td></tr>
+</tbody>
+</table>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 24px">
+<a class="btn primary" href="Catalogo.html">Guardar mis votos</a>
+<a href="Catalogo.html">Volver al catálogo</a>
+</div>
+</main>
+</div>
+
+<a class="volver" href="../index.html">← Índice de la muestra</a></body></html>

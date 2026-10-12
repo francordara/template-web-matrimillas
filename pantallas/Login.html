@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Iniciar sesión y registro · Matrimillas</title>
+
+<style>
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#1E293B;background:#fff;font-size:14px;line-height:1.5}
+a{color:#4F46E5;text-decoration:none} a:hover{text-decoration:underline}
+.nav{display:flex;align-items:center;padding:12px 32px;border-bottom:1px solid #E2E8F0}
+.brand{font-weight:700;font-size:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border-radius:8px;border:1px solid #E2E8F0;background:#F3F4F6;color:#111827;font:600 14px system-ui,sans-serif;cursor:pointer}
+.btn.primary{background:#4F46E5;border-color:#4F46E5;color:#fff}
+.wrap{box-sizing:border-box;max-width:1100px;margin:0 auto;padding:32px}
+h1{margin:0 0 24px;font-size:36px;line-height:1.15;font-weight:700}
+h2{margin:0 0 16px;font-size:20px;font-weight:700}
+label{display:block;font-weight:600;margin-bottom:6px}
+input{box-sizing:border-box;width:100%;min-height:44px;padding:8px 12px;border:1px solid #94A3B8;border-radius:6px;font:inherit;color:#1E293B;background:#fff}
+.field{display:flex;flex-direction:column;margin-bottom:16px}
+.panel{border:1px solid #E2E8F0;border-radius:10px;padding:24px;background:#fff}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:24px}
+.muted{color:#475569}
+</style>
+
+<style>.volver{position:fixed;right:12px;bottom:12px;background:#1E293B;color:#fff!important;padding:8px 14px;border-radius:999px;font:600 13px system-ui;text-decoration:none;opacity:.85;z-index:9}</style></head><body>
+
+
+<div style="min-height: 800px">
+<header class="nav"><span class="brand">Matrimillas</span></header>
+<main class="wrap">
+<h1>Bienvenido a Matrimillas</h1>
+<div class="grid2">
+<form class="panel">
+<h2>Iniciar sesión</h2>
+<div class="field"><label for="login-email">Email</label><input id="login-email" type="email" value="ana@ejemplo.com"></div>
+<div class="field"><label for="login-pass">Contraseña</label><input id="login-pass" type="password" value="contraseña"></div>
+<a class="btn primary" href="MenuPrincipal.html">Iniciar sesión</a>
+</form>
+<form class="panel">
+<h2>Crear cuenta</h2>
+<div class="field"><label for="reg-name">Nombre</label><input id="reg-name" type="text" placeholder="Cómo te ven en tu grupo"></div>
+<div class="field"><label for="reg-email">Email</label><input id="reg-email" type="email" placeholder="tu@email.com"></div>
+<div class="field"><label for="reg-pass">Contraseña</label><input id="reg-pass" type="password" placeholder="Mínimo 8 caracteres"></div>
+<a class="btn" href="MenuPrincipal.html">Registrarme</a>
+</form>
+</div>
+<p class="muted" style="margin-top: 24px">Al iniciar sesión el sistema te da un token que se usa en cada pantalla. Después entrás al menú principal.</p>
+</main>
+</div>
+
+<a class="volver" href="../index.html">← Índice de la muestra</a></body></html>
